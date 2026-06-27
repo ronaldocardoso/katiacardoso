@@ -155,25 +155,75 @@ export default function Home() {
           {/* Orb 3: Soft gold */}
           <div className="absolute bottom-[25%] left-[8%] w-80 h-80 rounded-full bg-dourado-suave/5 blur-[90px] animate-float-3" />
         </div>
-        <section className="relative min-h-[85vh] flex items-center bg-off-white py-12 md:py-20 lg:py-0 border-b border-bege-areia/20 lg:bg-[url('/calm_and_focused_workspace_portrait.png')] lg:bg-cover lg:bg-[position:right_-120px_center] lg:bg-no-repeat">
-          <div className="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center z-10">
+
+        {/* 1. Hero Section - Mobile/Tablet (Mockup-compliant) */}
+        <section className="lg:hidden bg-white border-b border-bege-areia/20 w-full flex flex-col">
+          {/* Top Image + Title overlay */}
+          <div className="relative w-full aspect-[1/0.95] overflow-hidden">
+            <Image
+              src="/katia_portrait_contact.png"
+              alt="Kátia Cardoso"
+              fill
+              priority
+              className="object-cover object-[right_25%_center]"
+              sizes="100vw"
+            />
+            {/* Title Overlay */}
+            <div className="absolute inset-y-0 left-0 w-[58%] flex items-center pl-6 z-10">
+              <h1 className="font-serif text-[28px] md:text-4xl text-azul-petroleo font-medium leading-[1.12] tracking-tight">
+                Um espaço de <br />
+                <span className="text-verde-salvia font-semibold">escuta, reflexão e</span> <br />
+                <span className="text-verde-salvia font-semibold">transformação.</span>
+              </h1>
+            </div>
+          </div>
+
+          {/* Content + CTAs Below */}
+          <div className="px-6 py-8 bg-white flex flex-col gap-6 text-left">
+            <p className="font-sans text-[15px] md:text-base text-grafite-suave/85 leading-relaxed">
+              Com mais de 30 anos de experiência em saúde mental, atuo como <strong className="font-semibold text-azul-petroleo">psicanalista online</strong> e <strong className="font-semibold text-azul-petroleo">terapeuta</strong> atendendo a região de <strong className="font-semibold text-azul-petroleo">Santos</strong>, <strong className="font-semibold text-azul-petroleo">São Vicente</strong>, <strong className="font-semibold text-azul-petroleo">Baixada Santista</strong> e pacientes de todo o Brasil e exterior.
+            </p>
+
+            <div className="flex flex-col gap-3">
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-4 bg-verde-salvia text-off-white font-sans text-xs tracking-widest font-bold rounded-full shadow-md hover:bg-verde-salvia-escuro hover:shadow-lg transition-all text-center uppercase"
+              >
+                AGENDAR ATENDIMENTO
+              </a>
+              
+              <Link
+                href="/sobre-mim"
+                className="w-full py-4 border border-dourado-suave text-dourado-suave hover:bg-bege-areia/10 font-sans text-xs tracking-widest font-bold rounded-full transition-all text-center uppercase"
+              >
+                CONHEÇA MINHA TRAJETÓRIA
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* 1. Hero Section - Desktop */}
+        <section className="hidden lg:flex relative min-h-[85vh] items-center bg-off-white border-b border-bege-areia/20 bg-[url('/calm_and_focused_workspace_portrait.png')] bg-cover bg-[position:right_-120px_center] bg-no-repeat">
+          <div className="max-w-7xl mx-auto px-12 w-full grid grid-cols-12 gap-8 items-center z-10">
             {/* Left Content */}
-            <div className="lg:col-span-7 flex flex-col gap-6 text-left lg:py-28">
-              <span className="font-sans text-[11px] md:text-xs tracking-[0.25em] text-rosa-antigo font-bold uppercase">
+            <div className="col-span-7 flex flex-col gap-6 text-left py-28">
+              <span className="font-sans text-xs tracking-[0.25em] text-rosa-antigo font-bold uppercase">
                 ESCUTA • ACOLHIMENTO • TRANSFORMAÇÃO
               </span>
               
-              <h1 className="font-serif text-6xl md:text-7xl lg:text-[80px] text-azul-petroleo font-medium leading-[1.02] tracking-tight">
+              <h1 className="font-serif text-[80px] text-azul-petroleo font-medium leading-[1.02] tracking-tight">
                 Um espaço de <br />
                 <span className="text-verde-salvia font-semibold">escuta, reflexão e</span> <br />
                 <span className="text-verde-salvia font-semibold">transformação.</span>
               </h1>
               
-              <p className="font-sans text-base md:text-lg text-grafite-suave/85 leading-relaxed max-w-xl">
+              <p className="font-sans text-lg text-grafite-suave/85 leading-relaxed max-w-xl">
                 Com mais de 30 anos de experiência em saúde mental, atuo como <strong className="font-semibold text-azul-petroleo">psicanalista online</strong> e <strong className="font-semibold text-azul-petroleo">terapeuta</strong> atendendo a região de <strong className="font-semibold text-azul-petroleo">Santos</strong>, <strong className="font-semibold text-azul-petroleo">São Vicente</strong>, <strong className="font-semibold text-azul-petroleo">Baixada Santista</strong> e pacientes de todo o Brasil e exterior.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 mt-4">
+              <div className="flex gap-4 mt-4">
                 <a
                   href={whatsappLink}
                   target="_blank"
@@ -189,20 +239,6 @@ export default function Home() {
                 >
                   CONHEÇA MINHA TRAJETÓRIA
                 </Link>
-              </div>
-            </div>
-
-            {/* Right Image Container - Visible on mobile/tablet, hidden on desktop since it's the background */}
-            <div className="lg:hidden flex justify-center w-full">
-              <div className="relative w-full max-w-[500px] aspect-[2.2/1] rounded-2xl overflow-hidden shadow-lg border border-bege-areia/40">
-                <Image
-                  src="/calm_and_focused_workspace_portrait.png"
-                  alt="Kátia Dalle Vedove Cardoso"
-                  fill
-                  priority
-                  className="object-cover object-right"
-                  sizes="(max-w-720px) 100vw, 500px"
-                />
               </div>
             </div>
           </div>
