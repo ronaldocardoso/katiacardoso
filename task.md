@@ -1,0 +1,32 @@
+# Lista de Tarefas — Website Katia Cardoso
+
+- [x] Inicialização do Next.js
+  - [x] Criar subdiretório temporário e rodar `create-next-app`
+  - [x] Mover arquivos para o diretório raiz
+  - [x] Ajustar `package.json` para nome em minúsculas
+  - [x] Organizar imagens na pasta `public/`
+- [x] Configuração do Design System
+  - [x] Atualizar `tailwind.config.ts` com as cores personalizadas e fontes
+  - [x] Configurar `src/app/layout.tsx` para carregar as fontes do Google (Cormorant Garamond, Manrope)
+  - [x] Configurar `src/app/globals.css`
+- [x] Componentes Reutilizáveis
+  - [x] Criar componente `Header` (Responsivo, sticky)
+  - [x] Criar componente `Footer` (Completo, responsivo)
+  - [x] Criar ornamentos botânicos SVGs e ícones lineares
+  - [x] Criar componentes de apoio (`CardDiferencial`, `CardServico`, `CardBlog`, `FAQAccordion`)
+- [x] Desenvolvimento de Páginas
+  - [x] Página Home (`/`)
+  - [x] Página Sobre Mim (`/sobre-mim`)
+  - [x] Página Serviços (`/servicos`)
+  - [x] Páginas de Serviço Individual (`/servicos/[slug]`)
+  - [x] Página Blog (`/blog`) e Rota de Artigo (`/blog/[slug]`)
+  - [x] Página Contato (`/contato`) com formulário funcional
+  - [x] Páginas de Políticas (`/politica-de-privacidade` e `/termos-de-uso`)
+- [x] Otimização e Ajustes
+  - [x] Adicionar Banner de Cookies
+  - [x] Configurar SEO básico (títulos, meta descrições)
+  - [x] Revisar acessibilidade e responsividade
+- [x] Verificação Final
+  - [x] Configurar porta 3007 no script de desenvolvimento
+  - [x] Executar build local com `npm run build`
+  - [x] Subir servidor local e testar

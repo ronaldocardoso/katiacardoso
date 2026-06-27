@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-off-white: #FBF9F4;
+  --color-bege-areia: #EDE4D5;
+  --color-verde-salvia: #688A58;
+  --color-verde-salvia-escuro: #4D6D3E;
+  --color-rosa-antigo: #CF6D78;
+  --color-rosa-antigo-escuro: #B55660;
+  --color-azul-petroleo: #315766;
+  --color-dourado-suave: #C79E62;
+  --color-grafite-suave: #313431;
+
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-manrope), sans-serif;
+  --font-cursive: var(--font-caveat), cursive;
+}
+
+:root {
+  --background: #FBF9F4;
+  --foreground: #313431;
+}
+
+/* Custom scrollbar to match the design aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FBF9F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #EDE4D5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #688A58;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FBF9F4;
+  color: #313431;
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+/* Accessibility: Visible focus styles for keyboard navigation */
+*:focus-visible {
+  outline: 2px solid #7C8D70;
+  outline-offset: 4px;
+}
+
+/* Accent color for standard inputs */
+input, textarea, select {
+  accent-color: #7C8D70;
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-40px) scale(1.05);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(40px) scale(0.95);
+  }
+}
+
+.animate-float-1 {
+  animation: float-slow 15s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float-reverse 20s ease-in-out infinite;
+}
+
+.animate-float-3 {
+  animation: float-slow 25s ease-in-out infinite alternate;
+}
