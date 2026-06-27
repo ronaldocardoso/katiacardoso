@@ -208,7 +208,7 @@ export default function Home() {
         </section>
 
         {/* 1. Hero Section - Desktop */}
-        <section className="hidden lg:flex relative min-h-[85vh] items-center bg-off-white border-b border-bege-areia/20 bg-[url('/calm_and_focused_workspace_portrait.png')] lg:bg-[length:auto_95%] lg:bg-[position:right_-280px_center] lg:bg-no-repeat">
+        <section className="hidden lg:flex relative min-h-[85vh] items-center bg-off-white border-b border-bege-areia/20 bg-[url('/calm_and_focused_workspace_portrait.png')] bg-cover lg:bg-center bg-no-repeat">
           <div className="max-w-7xl mx-auto px-12 w-full grid grid-cols-12 gap-8 items-center z-10">
             {/* Left Content */}
             <div className="col-span-7 flex flex-col gap-6 text-left py-28">
