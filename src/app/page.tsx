@@ -159,18 +159,18 @@ export default function Home() {
         {/* 1. Hero Section - Mobile/Tablet (Mockup-compliant) */}
         <section className="lg:hidden bg-white border-b border-bege-areia/20 w-full flex flex-col">
           {/* Top Image + Title overlay */}
-          <div className="relative w-full aspect-[1/0.95] overflow-hidden">
+          <div className="relative w-full aspect-[1/1.1] overflow-hidden">
             <Image
               src="/katia_portrait_contact.png"
               alt="Kátia Cardoso"
               fill
               priority
-              className="object-cover object-[right_25%_center]"
+              className="object-cover object-[right_5%_center]"
               sizes="100vw"
             />
             {/* Title Overlay */}
-            <div className="absolute inset-y-0 left-0 w-[58%] flex items-center pl-6 z-10">
-              <h1 className="font-serif text-[28px] md:text-4xl text-azul-petroleo font-medium leading-[1.12] tracking-tight">
+            <div className="absolute inset-y-0 left-0 w-[65%] flex items-center pl-6 z-10">
+              <h1 className="font-serif text-[34px] md:text-5xl text-azul-petroleo font-medium leading-[1.12] tracking-tight">
                 Um espaço de <br />
                 <span className="text-verde-salvia font-semibold">escuta, reflexão e</span> <br />
                 <span className="text-verde-salvia font-semibold">transformação.</span>
@@ -205,7 +205,7 @@ export default function Home() {
         </section>
 
         {/* 1. Hero Section - Desktop */}
-        <section className="hidden lg:flex relative min-h-[85vh] items-center bg-off-white border-b border-bege-areia/20 bg-[url('/calm_and_focused_workspace_portrait.png')] bg-cover bg-[position:right_-120px_center] bg-no-repeat">
+        <section className="hidden lg:flex relative min-h-[85vh] items-center bg-off-white border-b border-bege-areia/20 bg-[url('/calm_and_focused_workspace_portrait.png')] bg-cover lg:bg-[position:right_-220px_center] bg-no-repeat">
           <div className="max-w-7xl mx-auto px-12 w-full grid grid-cols-12 gap-8 items-center z-10">
             {/* Left Content */}
             <div className="col-span-7 flex flex-col gap-6 text-left py-28">
@@ -213,7 +213,7 @@ export default function Home() {
                 ESCUTA • ACOLHIMENTO • TRANSFORMAÇÃO
               </span>
               
-              <h1 className="font-serif text-[80px] text-azul-petroleo font-medium leading-[1.02] tracking-tight">
+              <h1 className="font-serif text-[88px] text-azul-petroleo font-medium leading-[1.02] tracking-tight">
                 Um espaço de <br />
                 <span className="text-verde-salvia font-semibold">escuta, reflexão e</span> <br />
                 <span className="text-verde-salvia font-semibold">transformação.</span>
