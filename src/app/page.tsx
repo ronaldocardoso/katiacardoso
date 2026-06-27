@@ -165,7 +165,8 @@ export default function Home() {
               alt="Kátia Cardoso"
               fill
               priority
-              className="object-cover object-[right_5%_center]"
+              className="object-cover"
+              style={{ objectPosition: '100% center', transform: 'scale(1.35)', transformOrigin: 'right center' }}
               sizes="100vw"
             />
             {/* Title Overlay */}
