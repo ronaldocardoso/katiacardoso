@@ -159,16 +159,18 @@ export default function Home() {
         {/* 1. Hero Section - Mobile/Tablet (Mockup-compliant) */}
         <section className="lg:hidden bg-white border-b border-bege-areia/20 w-full flex flex-col">
           {/* Top Image + Title overlay */}
-          <div className="relative w-full aspect-[1/1.1] overflow-hidden">
-            <Image
-              src="/katia_portrait_contact.png"
-              alt="Kátia Cardoso"
-              fill
-              priority
-              className="object-cover"
-              style={{ objectPosition: '100% center', transform: 'scale(1.35)', transformOrigin: 'right center' }}
-              sizes="100vw"
-            />
+          <div className="relative w-full aspect-[1/1.1] overflow-hidden bg-off-white">
+            {/* Background Image restricted to the right */}
+            <div className="absolute right-0 top-0 w-[70%] h-full">
+              <Image
+                src="/katia_portrait_contact.png"
+                alt="Kátia Cardoso"
+                fill
+                priority
+                className="object-cover object-[right_20%_center]"
+                sizes="70vw"
+              />
+            </div>
             {/* Title Overlay */}
             <div className="absolute inset-y-0 left-0 w-[65%] flex items-center pl-6 z-10">
               <h1 className="font-serif text-[34px] md:text-5xl text-azul-petroleo font-medium leading-[1.12] tracking-tight">
@@ -206,7 +208,7 @@ export default function Home() {
         </section>
 
         {/* 1. Hero Section - Desktop */}
-        <section className="hidden lg:flex relative min-h-[85vh] items-center bg-off-white border-b border-bege-areia/20 bg-[url('/calm_and_focused_workspace_portrait.png')] lg:bg-[length:auto_100%] lg:bg-[position:right_-180px_center] lg:bg-no-repeat">
+        <section className="hidden lg:flex relative min-h-[85vh] items-center bg-off-white border-b border-bege-areia/20 bg-[url('/calm_and_focused_workspace_portrait.png')] lg:bg-[length:auto_95%] lg:bg-[position:right_-280px_center] lg:bg-no-repeat">
           <div className="max-w-7xl mx-auto px-12 w-full grid grid-cols-12 gap-8 items-center z-10">
             {/* Left Content */}
             <div className="col-span-7 flex flex-col gap-6 text-left py-28">
