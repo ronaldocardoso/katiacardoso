@@ -166,7 +166,7 @@ export default function Home() {
               fill
               priority
               className="object-cover"
-              style={{ objectPosition: '100% center', transform: 'scale(1.18)', transformOrigin: 'right center' }}
+              style={{ objectPosition: '100% center', transform: 'scale(1.05) translateX(30px)', transformOrigin: 'right center' }}
               sizes="100vw"
             />
             {/* Title Overlay */}
