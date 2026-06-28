@@ -268,7 +268,7 @@ export default function Home() {
                 é um <span className="font-cursive text-rosa-antigo text-4xl md:text-5xl block sm:inline-block font-normal lowercase md:ml-1">ato de coragem.</span>
               </h2>
               
-              <div className="flex flex-col gap-4 font-sans text-sm md:text-base text-grafite-suave/80 leading-relaxed">
+              <div className="flex flex-col gap-4 font-sans text-base md:text-lg text-grafite-suave/80 leading-relaxed">
                 <p>
                   A vida nos apresenta desafios que nem sempre conseguimos enfrentar sozinhos. Conflitos emocionais, perdas, relacionamentos difíceis, ansiedade, dependência química e sofrimento psíquico podem gerar sentimentos de impotência e isolamento.
                 </p>
@@ -329,7 +329,7 @@ export default function Home() {
                       {item.title}
                     </h3>
                     
-                    <p className="font-sans text-xs md:text-sm text-grafite-suave/80 leading-relaxed">
+                    <p className="font-sans text-sm md:text-base text-grafite-suave/80 leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -380,7 +380,7 @@ export default function Home() {
                         {item.title}
                       </h3>
                       
-                      <p className="font-sans text-sm text-grafite-suave/80 leading-relaxed mb-6">
+                      <p className="font-sans text-base text-grafite-suave/80 leading-relaxed mb-6">
                         {item.description}
                       </p>
                     </div>
@@ -484,11 +484,11 @@ export default function Home() {
                 <span className="text-verde-salvia font-semibold">conversar?</span>
               </h2>
               
-              <p className="font-sans text-sm md:text-base text-grafite-suave/85 leading-relaxed">
+              <p className="font-sans text-base md:text-lg text-grafite-suave/85 leading-relaxed">
                 Buscar ajuda é um passo importante e pode representar o início de um novo momento em sua vida. Estou aqui para ouvir, acolher e ajudar você a encontrar caminhos possíveis.
               </p>
               
-              <ul className="flex flex-col gap-3 mt-2 text-sm font-sans text-grafite-suave/90">
+              <ul className="flex flex-col gap-3 mt-2 text-base font-sans text-grafite-suave/90">
                 <li className="flex items-center gap-3">
                   <Shield className="w-4.5 h-4.5 text-verde-salvia" />
                   <span>Atendimento online para todo o Brasil</span>

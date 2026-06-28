@@ -97,7 +97,7 @@ export default function Contato() {
               Vamos conversar?
             </h1>
             <FloralDivider className="text-verde-salvia/45 w-24 h-4 mt-1 mb-2" />
-            <p className="font-sans text-sm md:text-base text-grafite-suave/80 leading-relaxed max-w-xl">
+            <p className="font-sans text-base md:text-lg text-grafite-suave/80 leading-relaxed max-w-xl">
               Buscar ajuda é um passo importante e pode representar o início de um novo momento em sua vida. Estou aqui para ouvir e acolher sua história.
             </p>
           </div>

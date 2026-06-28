@@ -73,7 +73,7 @@ export default function SobreMim() {
                 Minha história é construída pela <span className="text-verde-salvia font-semibold">escuta</span>, pela <span className="text-verde-salvia font-semibold">ética</span> e pelo compromisso com o cuidado em saúde mental.
               </h1>
 
-              <div className="font-sans text-sm md:text-base text-grafite-suave/80 leading-relaxed flex flex-col gap-4">
+              <div className="font-sans text-base md:text-lg text-grafite-suave/80 leading-relaxed flex flex-col gap-4">
                 <p>
                   Sou Assistente Social, Psicanalista e Terapeuta de Casal e Família, com mais de 30 anos dedicados ao cuidado em saúde mental.
                 </p>
@@ -120,7 +120,7 @@ export default function SobreMim() {
             </h2>
             <FloralDivider className="text-verde-salvia/45 w-24 h-4 mt-2" />
             
-            <p className="font-sans text-sm md:text-base text-grafite-suave/80 leading-relaxed max-w-3xl">
+            <p className="font-sans text-base md:text-lg text-grafite-suave/80 leading-relaxed max-w-3xl">
               Acredito que o sofrimento psíquico e os conflitos familiares não devem ser tratados apenas sob a ótica da patologização ou da frieza clínica. Cada sujeito traz uma narrativa viva e singular, que precisa de um espaço seguro de acolhimento e escuta sem julgamentos. Meu compromisso é caminhar ao seu lado com ética, dedicação e técnica, ajudando a abrir novas perspectivas de vida.
             </p>
           </div>

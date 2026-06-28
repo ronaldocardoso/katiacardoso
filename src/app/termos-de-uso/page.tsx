@@ -34,7 +34,7 @@ export default function TermosDeUso() {
           </p>
 
           {/* Terms Text */}
-          <div className="bg-white border border-bege-areia/40 rounded-[2rem] p-8 md:p-12 shadow-sm font-sans text-sm md:text-base text-grafite-suave/80 leading-relaxed flex flex-col gap-6">
+          <div className="bg-white border border-bege-areia/40 rounded-[2rem] p-8 md:p-12 shadow-sm font-sans text-base md:text-lg text-grafite-suave/80 leading-relaxed flex flex-col gap-6">
             <section>
               <h2 className="font-serif text-xl md:text-2xl text-azul-petroleo font-semibold mb-4">
                 1. Aceitação dos Termos

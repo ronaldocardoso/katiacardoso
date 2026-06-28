@@ -249,7 +249,7 @@ export default async function ServicoIndividual({ params }: PageProps) {
                 Para quem é este atendimento?
               </h2>
               
-              <ul className="flex flex-col gap-4 font-sans text-sm md:text-base text-grafite-suave/80 leading-relaxed">
+              <ul className="flex flex-col gap-4 font-sans text-base md:text-lg text-grafite-suave/80 leading-relaxed">
                 {service.targetAudience.map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-verde-salvia flex-shrink-0 mt-0.5" />
@@ -266,7 +266,7 @@ export default async function ServicoIndividual({ params }: PageProps) {
                 Como o processo pode ajudar?
               </h2>
               
-              <ul className="flex flex-col gap-4 font-sans text-sm md:text-base text-grafite-suave/80 leading-relaxed">
+              <ul className="flex flex-col gap-4 font-sans text-base md:text-lg text-grafite-suave/80 leading-relaxed">
                 {service.benefits.map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-dourado-suave flex-shrink-0 mt-0.5" />
@@ -286,7 +286,7 @@ export default async function ServicoIndividual({ params }: PageProps) {
                 <Video className="w-6 h-6 text-verde-salvia" />
                 Como funciona o atendimento online?
               </h2>
-              <p className="font-sans text-sm md:text-base text-grafite-suave/85 leading-relaxed">
+              <p className="font-sans text-base md:text-lg text-grafite-suave/85 leading-relaxed">
                 {service.howItWorks}
               </p>
             </div>

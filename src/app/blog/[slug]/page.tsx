@@ -62,7 +62,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             .split("\n")
             .map((item) => item.replace(/^[-*]\s+/, "").trim());
           return (
-            <ul key={index} className="list-disc pl-6 my-4 flex flex-col gap-2 font-sans text-sm md:text-base text-grafite-suave/80 leading-relaxed">
+            <ul key={index} className="list-disc pl-6 my-4 flex flex-col gap-2 font-sans text-base md:text-lg text-grafite-suave/80 leading-relaxed">
               {listItems.map((li, liIdx) => {
                 // Bold inline parsing
                 if (li.includes("**")) {
@@ -87,7 +87,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             .split("\n")
             .map((item) => item.replace(/^\d+\.\s+/, "").trim());
           return (
-            <ol key={index} className="list-decimal pl-6 my-4 flex flex-col gap-2 font-sans text-sm md:text-base text-grafite-suave/80 leading-relaxed">
+            <ol key={index} className="list-decimal pl-6 my-4 flex flex-col gap-2 font-sans text-base md:text-lg text-grafite-suave/80 leading-relaxed">
               {listItems.map((li, liIdx) => {
                 if (li.includes("**")) {
                   const parts = li.split("**");
@@ -109,7 +109,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         if (trimmed.includes("**")) {
           const parts = trimmed.split("**");
           return (
-            <p key={index} className="font-sans text-sm md:text-base text-grafite-suave/80 leading-relaxed my-4">
+            <p key={index} className="font-sans text-base md:text-lg text-grafite-suave/80 leading-relaxed my-4">
               {parts.map((part, pIdx) =>
                 pIdx % 2 === 1 ? <strong key={pIdx} className="text-azul-petroleo font-semibold">{part}</strong> : part
               )}
@@ -118,7 +118,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         }
 
         return (
-          <p key={index} className="font-sans text-sm md:text-base text-grafite-suave/80 leading-relaxed my-4">
+          <p key={index} className="font-sans text-base md:text-lg text-grafite-suave/80 leading-relaxed my-4">
             {trimmed}
           </p>
         );

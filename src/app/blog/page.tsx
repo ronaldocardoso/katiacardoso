@@ -74,7 +74,7 @@ export default function BlogIndex() {
               Reflexões sobre saúde mental e vínculos
             </h1>
             <FloralDivider className="text-verde-salvia/45 w-24 h-4 mt-1 mb-2" />
-            <p className="font-sans text-sm md:text-base text-grafite-suave/80 leading-relaxed max-w-xl">
+            <p className="font-sans text-base md:text-lg text-grafite-suave/80 leading-relaxed max-w-xl">
               Artigos informativos e reflexões éticas sobre psicanálise, dinâmicas de casal e família, e o cuidado na dependência química.
             </p>
           </div>
@@ -164,7 +164,7 @@ export default function BlogIndex() {
 
                   {/* Content side */}
                   <div className="lg:col-span-6 p-8 md:p-12 flex flex-col justify-between gap-6">
-                    <p className="font-sans text-sm md:text-base text-grafite-suave/80 leading-relaxed">
+                    <p className="font-sans text-base md:text-lg text-grafite-suave/80 leading-relaxed">
                       {featuredPost.excerpt}
                     </p>
                     <Link

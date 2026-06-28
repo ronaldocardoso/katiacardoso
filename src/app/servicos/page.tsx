@@ -73,7 +73,7 @@ export default function Servicos() {
             </h1>
             <FloralDivider className="text-verde-salvia/45 w-24 h-4 mt-2" />
             
-            <p className="font-sans text-sm md:text-base text-grafite-suave/80 leading-relaxed max-w-2xl">
+            <p className="font-sans text-base md:text-lg text-grafite-suave/80 leading-relaxed max-w-2xl">
               Cada processo terapêutico é único. Conheça as possibilidades de atendimento e encontre o espaço que melhor acolhe sua necessidade atual.
             </p>
           </div>
@@ -100,7 +100,7 @@ export default function Servicos() {
                       </h2>
                     </div>
 
-                    <p className="font-sans text-sm md:text-base text-grafite-suave/80 leading-relaxed">
+                    <p className="font-sans text-base md:text-lg text-grafite-suave/80 leading-relaxed">
                       {service.description}
                     </p>
 
