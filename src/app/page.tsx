@@ -181,7 +181,7 @@ export default function Home() {
 
           {/* Content + CTAs Below */}
           <div className="px-6 py-8 bg-white flex flex-col gap-6 text-left">
-            <p className="font-sans text-[15px] md:text-base text-grafite-suave/85 leading-relaxed">
+            <p className="font-sans text-[17px] md:text-base text-grafite-suave/85 leading-relaxed">
               Com mais de 30 anos de experiência em saúde mental, atuo como <strong className="font-semibold text-azul-petroleo">psicanalista online</strong> e <strong className="font-semibold text-azul-petroleo">terapeuta</strong> atendendo a região de <strong className="font-semibold text-azul-petroleo">Santos</strong>, <strong className="font-semibold text-azul-petroleo">São Vicente</strong>, <strong className="font-semibold text-azul-petroleo">Baixada Santista</strong> e pacientes de todo o Brasil e exterior.
             </p>
 
