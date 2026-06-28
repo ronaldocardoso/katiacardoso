@@ -170,10 +170,7 @@ export default function Home() {
               sizes="100vw"
             />
             {/* Title Overlay */}
-            <div className="absolute inset-y-0 left-0 w-[65%] flex flex-col justify-center pl-6 z-10 gap-1.5">
-              <span className="font-sans text-[8px] tracking-[0.2em] text-rosa-antigo font-bold uppercase">
-                ESCUTA • ACOLHIMENTO • TRANSFORMAÇÃO
-              </span>
+            <div className="absolute inset-y-0 left-0 w-[65%] flex items-center pl-6 z-10">
               <h1 className="font-serif text-[32px] md:text-5xl text-azul-petroleo font-medium leading-[1.12] tracking-tight">
                 Um espaço de <br />
                 <span className="text-verde-salvia font-semibold">escuta, reflexão e</span> <br />
