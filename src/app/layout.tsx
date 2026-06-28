@@ -53,7 +53,7 @@ export default function RootLayout({
       className={`${cormorant.variable} ${manrope.variable} ${caveat.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-off-white text-grafite-suave">
+      <body className="min-h-full flex flex-col bg-off-white text-grafite-suave" suppressHydrationWarning>
         {children}
         <FloatingWhatsApp />
       </body>
