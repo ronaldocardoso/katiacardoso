@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
@@ -21,12 +21,36 @@ export default function Contato() {
 
   const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
+  // Math Captcha State
+  const [captchaNum1, setCaptchaNum1] = useState(0);
+  const [captchaNum2, setCaptchaNum2] = useState(0);
+  const [userCaptchaAnswer, setUserCaptchaAnswer] = useState("");
+  const [captchaError, setCaptchaError] = useState(false);
+
+  const generateCaptcha = () => {
+    const n1 = Math.floor(Math.random() * 9) + 1; // 1 to 9
+    const n2 = Math.floor(Math.random() * 9) + 1; // 1 to 9
+    setCaptchaNum1(n1);
+    setCaptchaNum2(n2);
+    setUserCaptchaAnswer("");
+    setCaptchaError(false);
+  };
+
+  useEffect(() => {
+    generateCaptcha();
+  }, []);
+
   const whatsappLink = "https://wa.me/5514996838773?text=Ol%C3%A1%2C%20K%C3%A1tia.%20Gostaria%20de%20saber%20mais%20sobre%20o%20atendimento%20online%20e%20verificar%20hor%C3%A1rios%20dispon%C3%ADveis.";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.nome || !formData.email || !formData.mensagem || !formData.consentimento) {
       setFormStatus("error");
+      return;
+    }
+
+    if (parseInt(userCaptchaAnswer) !== captchaNum1 + captchaNum2) {
+      setCaptchaError(true);
       return;
     }
 
@@ -43,6 +67,7 @@ export default function Contato() {
         mensagem: "",
         consentimento: false
       });
+      generateCaptcha();
     }, 1500);
   };
 
@@ -302,6 +327,31 @@ export default function Contato() {
                       onChange={handleInputChange}
                       className="w-full bg-verde-salvia border border-verde-salvia-escuro/10 rounded-xl py-3 px-4 text-sm text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-transparent transition-all resize-none"
                     />
+                  </div>
+
+                  {/* Math Captcha */}
+                  <div className="flex flex-col gap-1.5">
+                    <label htmlFor="captcha" className="text-xs font-bold text-azul-petroleo">
+                      Confirmação anti-spam: Quanto é {captchaNum1} + {captchaNum2}?
+                    </label>
+                    <input
+                      type="number"
+                      id="captcha"
+                      required
+                      placeholder="Digite a soma"
+                      value={userCaptchaAnswer}
+                      onChange={(e) => {
+                        setUserCaptchaAnswer(e.target.value);
+                        setCaptchaError(false);
+                      }}
+                      className="w-full bg-verde-salvia border border-verde-salvia-escuro/10 rounded-xl py-3 px-4 text-sm text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-transparent transition-all [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    />
+                    {captchaError && (
+                      <span className="text-xs font-bold text-red-600 mt-1 flex items-center gap-1.5">
+                        <AlertCircle className="w-3.5 h-3.5" />
+                        Resultado incorreto. Por favor, tente novamente.
+                      </span>
+                    )}
                   </div>
 
                   {/* Consent checkbox */}
